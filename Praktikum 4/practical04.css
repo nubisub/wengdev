@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+	font-family: "Open Sans", sans-serif;
+}
+h1 {
+	font-weight: 700;
+	font-size: 2em;
+	color: Navy;
+	margin-top: 1em;
+}
+h2 {
+	font-weight: 700;
+	font-size: 1.8em;
+	color: Navy;
+}
+nav ol {
+	display: flex;
+}
+nav li {
+	list-style: none;
+	padding: 0 1em;
+	background-color: #aab;
+}
+nav li a {
+	text-decoration: none;
+	background-color: #ccd;
+	padding: 0.2em 1em;
+	display: inline-block;
+}
+nav li a:hover {
+	background-color: #ffff00;
+}
+article h1 {
+	margin-bottom: 0;
+}
+/* ============================================= */
+#Part1 p {
+	background-color: #ffffe0;
+	border-radius: 1em;
+	padding: 0.5em;
+	margin: 0.5em 0em;
+}
+#Part2 ul {
+	margin-top: 0em;
+	padding: 0em;
+}
+#Part2 ul li {
+	list-style-position: inside;
+}
+#Part2 p {
+	margin-bottom: 0em;
+	margin-top: 0em;
+}
+/* ============================================= */
+#Part2 ol {
+	padding-left: 0em;
+	margin-top: 0em;
+	list-style-position: inside;
+}
+#Part2 ol {
+	counter-reset: item;
+}
+#Part2 li {
+	display: table;
+	counter-increment: item;
+}
+#Part2 ol li:before {
+	content: counters(item, ".") ". ";
+	display: inline-block;
+	width: 2em;
+}
+/* ============================================= */
+dl dd {
+	margin-left: 0;
+	background-color: #ccd;
+	border-radius: 0 0 1em 1em;
+	padding: 0.5em;
+}
+dl dt {
+	border-radius: 1em 1em 0 0;
+	padding: 0.5em;
+	color: white;
+	background-color: Navy;
+	margin-top: 10px;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+			body {
+				font-family: "Source Sans Pro", sans-serif;
+			}
+			table {
+				border-collapse: collapse;
+				margin-left: 2em;
+			}
+			thead {
+				background-color: lightblue;
+			}
+			td {
+				border: solid;
+				border-width: 1px;
+				padding: 0 0.5em;
+				text-align: right;
+			}
+			th {
+				border: solid;
+				border-width: 1px;
+				padding: 0 0.5em;
+				text-align: center;
+			}
+			tbody tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+			td:nth-child(1) {
+				background-color: lightblue;
+				text-align: left;
+				font-weight: bold;
+			}
+			tr:nth-child(1) th:nth-child(1) {
+				text-align: left;
+			}
+			thead tr:nth-child(2) th {
+				text-align: right;
+			}
+			.first {
+				margin-bottom: 1ex;
+				font-weight: bold;
+			}
+			.second {
+				caption-side: bottom;
+				text-align: left;
+			}
+			dt {
+				float: left;
+				clear: left;
+				font-weight: bold;
+				padding: 0 0.5em;
+				background-color: lightblue;
+			}
+			dt::after {
+				content: ":";
+			}
+			dd {
+				background-color: lightyellow;
+				padding-left: 2.5em;
+			}
+			section {
+				margin-left: 2em;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Education and Skills</h1>
+		<table>
+			<caption class="first">
+				NVQ Qualifications in UK Core Cities
+			</caption>
+			<thead>
+				<tr>
+					<th rowspan="2">City</th>
+					<th colspan="2">NVQ4</th>
+					<th colspan="2">NVQ3</th>
+					<th colspan="2">NVQ2</th>
+				</tr>
+
+				<tr>
+					<th>Count</th>
+					<th>% Rate</th>
+					<th>Count</th>
+					<th>% Rate</th>
+					<th>Count</th>
+					<th>% Rate</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Birmingham</td>
+					<td>241,900</td>
+					<td>33.2</td>
+					<td>379.900</td>
+					<td>52.2</td>
+					<td>497.100</td>
+					<td>68.3</td>
+				</tr>
+
+				<tr>
+					<td>Bristol</td>
+					<td>155,900</td>
+					<td>49.3</td>
+					<td>216,300</td>
+					<td>68.5</td>
+					<td>256,300</td>
+					<td>81.1</td>
+				</tr>
+				<tr>
+					<td>Cardiff</td>
+					<td>114,600</td>
+					<td>46.8</td>
+					<td>160,400</td>
+					<td>65.5</td>
+					<td>196,400</td>
+					<td>80.2</td>
+				</tr>
+				<tr>
+					<td>Glasgow</td>
+					<td>197,100</td>
+					<td>45.9</td>
+					<td>249,600</td>
+					<td>58.1</td>
+					<td>297,000</td>
+					<td>69.1</td>
+				</tr>
+				<tr>
+					<td>Leeds</td>
+					<td>197,600</td>
+					<td>38.2</td>
+					<td>301,100</td>
+					<td>58.3</td>
+					<td>392,800</td>
+					<td>76.0</td>
+				</tr>
+				<tr>
+					<td>Liverpool</td>
+					<td>124,800</td>
+					<td>37.5</td>
+					<td>186,700</td>
+					<td>56.1</td>
+					<td>247,300</td>
+					<td>74.3</td>
+				</tr>
+				<tr>
+					<td>Manchester</td>
+					<td>169,800</td>
+					<td>44.1</td>
+					<td>232,600</td>
+					<td>60.4</td>
+					<td>279,800</td>
+					<td>72.7</td>
+				</tr>
+				<tr>
+					<td>Newcastle</td>
+					<td>80,600</td>
+					<td>40.5</td>
+					<td>121,800</td>
+					<td>61.3</td>
+					<td>155,700</td>
+					<td>78.3</td>
+				</tr>
+				<tr>
+					<td>Nottingham</td>
+					<td>70,200</td>
+					<td>31.2</td>
+					<td>125,000</td>
+					<td>55.7</td>
+					<td>156,900</td>
+					<td>69.9</td>
+				</tr>
+				<tr>
+					<td>Sheffield</td>
+					<td>166,800</td>
+					<td>44.1</td>
+					<td>249,900</td>
+					<td>66.1</td>
+					<td>298,900</td>
+					<td>79.0</td>
+				</tr>
+			</tbody>
+			<!-- sebenernya gak boleh pak caption 2x -->
+			<caption class="second">
+				<dl>
+					<dt>NVQ4</dt>
+					<dd>HND, Degree and Higher Degree level level qualifications</dd>
+					<dt>NVQ3</dt>
+					<dd>2 or more A levels, or equivalent</dd>
+					<dt>NVQ2</dt>
+					<dd>5 or more GCSEs at grades A-C, or equivalent</dd>
+				</dl>
+			</caption>
+		</table>
+		<hr />
+		<footer>
+			<address>
+				Created by hendra kusuma
+				<a href="mailto:222011395@stis.ac.id">(222011395@stis.ac.id)</a>
+			</address>
+		</footer>
+	</body>
+</html>
