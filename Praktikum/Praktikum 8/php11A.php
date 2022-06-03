@@ -11,7 +11,7 @@
     <body>
         <h1>Our first PHP script</h1>
         <?php
-$user = "Hendra Kusuma";
+$user = "nubisub";
 print ("<p><b>Hello $user<br>\nHello World!</b></p>\n"); ?>
     </body>
 
