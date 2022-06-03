@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sum Random Integer (1-9)</title>
+		<style>
+			* {
+				box-sizing: border-box;
+				/* border: solid 1px; */
+			}
+			body {
+				height: 100vh;
+				font-family: sans-serif;
+				font-size: 1.2em;
+				background: rgb(53, 68, 103);
+				background: linear-gradient(
+					16deg,
+					rgba(53, 68, 103, 1) 0%,
+					rgba(15, 23, 42, 1) 69%
+				);
+				margin: 0;
+                padding-top: 50px;
+			}
+			table {
+                /* padding-top: 30px; */
+				/* margin-top: 40px; */
+				border-collapse: collapse;
+				width: 400px;
+                /* margin */
+				margin: 0 auto 10px auto;
+			}
+			tr {
+				/* border: solid 1px; */
+				border-collapse: collapse;
+				/* width: 100%; */
+			}
+			td {
+				/* border: solid 1px; */
+				border-collapse: collapse;
+				/* width:10px; */
+				/* width: 100%; */
+			}
+			td input {
+				margin: 0%;
+				padding: 40px;
+				width: 100%;
+				cursor: pointer;
+				font-size: 2em;
+				transition: all 0.2s;
+				outline: none;
+				border: solid 1px aquamarine;
+			}
+			td input:hover {
+				background-color: rgba(8, 96, 131, 0.952);
+				border-radius: 0.1em;
+				box-shadow: 10px 10px 45px -13px rgba(0, 0, 0, 0.75);
+				-webkit-box-shadow: 10px 10px 45px -13px rgba(0, 0, 0, 0.75);
+				-moz-box-shadow: 10px 10px 45px -13px rgba(0, 0, 0, 0.75);
+				color: aliceblue;
+				border: solid 1px rgb(0, 0, 0);
+			}
+
+			.bawah {
+				text-align: center;
+				font-size: 2em;
+				/* width: 30%; */
+				display: flex;
+				margin: 0 auto;
+				justify-content: center;
+				align-items: center;
+				width: 400px;
+
+			}
+			.bawah button {
+				background-color: rgba(11, 129, 175, 0.952);
+
+				height: 100px;
+				/* margin: 20px 20px 20px 0px; */
+				cursor: pointer;
+				font-size: 1em;
+				border-radius: 0.05em;
+				transition: all 0.2s;
+				border: solid 1px white;
+				width: 100%;
+				color: aliceblue;
+			}
+			.bawah button:hover {
+				background-color: rgba(8, 96, 131, 0.952);
+				/* border-radius: 0.1em; */
+				box-shadow: 10px 10px 45px -13px rgba(0, 0, 0, 0.75);
+				-webkit-box-shadow: 10px 10px 45px -13px rgba(0, 0, 0, 0.75);
+				-moz-box-shadow: 10px 10px 45px -13px rgba(0, 0, 0, 0.75);
+				color: aliceblue;
+				border: none;
+			}
+		</style>
+		<script>
+			function random(value) {
+				return Math.floor(Math.random() * 10);
+			}
+
+			function sum() {
+				var sum = 0;
+				for (
+					let i = 0;
+					i < document.getElementsByClassName("hitung").length;
+					i++
+				) {
+					let a = parseInt(document.getElementsByTagName("input")[i].value);
+					sum += a;
+				}
+				console.log(sum);
+				document.getElementById("sum").innerHTML = "Sum : " + sum;
+			}
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>
+					<input
+						class="hitung"
+						onclick="value = random(value)"
+						type="button"
+						value="0"
+					/>
+				</td>
+
+				<td>
+					<input
+						class="hitung"
+						onclick="value = random(value)"
+						type="button"
+						value="0"
+					/>
+				</td>
+				<td>
+					<input
+						class="hitung"
+						onclick="value = random(value)"
+						type="button"
+						value="0"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input
+						class="hitung"
+						onclick="value = random(value)"
+						type="button"
+						value="0"
+					/>
+				</td>
+				<td>
+					<input
+						class="hitung"
+						onclick="value = random(value)"
+						type="button"
+						value="0"
+					/>
+				</td>
+				<td>
+					<input
+						class="hitung"
+						onclick="value = random(value)"
+						type="button"
+						value="0"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input
+						class="hitung"
+						onclick="value = random(value)"
+						type="button"
+						value="0"
+					/>
+				</td>
+				<td>
+					<input
+						class="hitung"
+						onclick="value = random(value)"
+						type="button"
+						value="0"
+					/>
+				</td>
+				<td>
+					<input
+						class="hitung"
+						onclick="value = random(value)"
+						type="button"
+						value="0"
+					/>
+				</td>
+			</tr>
+		</table>
+		<div class="bawah">
+			<button id="sum" onclick="sum()" type="submit">Sum :</button>
+		</div>
+	</body>
+</html>

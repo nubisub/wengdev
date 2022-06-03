@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en‐GB">
+	<head>
+		<title>JavaScript and Forms</title>
+		<script>
+			function FahrenheitToCelsius(temperature) {
+				return ((temperature - 32) * 5) / 9;
+			}
+			function processInput(value) {
+				try {
+					if (value == "") {
+						throw "empty";
+					} else if (isNaN(value)) {
+						throw value + " is not a number";
+					} else {
+						document.getElementById("error").innerHTML = "";
+						return FahrenheitToCelsius(parseFloat(value)).toFixed(1);
+					}
+				} catch (error) {
+					console.log(error);
+					document.getElementById("error").innerHTML = error;
+					return "";
+				}
+			}
+		</script>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+			* {
+				box-sizing: border-box;
+				color: aliceblue;
+				margin: 0;
+			}
+			body {
+				padding-top: 80px;
+				background: rgb(53, 68, 103);
+				background: linear-gradient(
+					318deg,
+					rgba(53, 68, 103, 1) 0%,
+					rgba(15, 23, 42, 1) 49%
+				);
+				height: 100vh;
+				font-family: "Roboto", sans-serif;
+			}
+			h1 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			form {
+				border: solid rgba(128, 128, 128, 0.246) 0.1em;
+				margin: 0 auto;
+				width: 400px;
+				padding: 30px;
+				background-color: rgb(14, 26, 54);
+				border-radius: 0.3em;
+				box-shadow: 10px 10px 45px -5px rgba(31, 31, 31, 0.75);
+				-webkit-box-shadow: 10px 10px 45px -5px rgba(31, 31, 31, 0.75);
+				-moz-box-shadow: 10px 10px 45px -5px rgba(31, 31, 31, 0.75);
+			}
+			.button {
+				width: 100%;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				cursor: pointer;
+				background-color: rgba(14, 96, 163, 0.863);
+				color: aliceblue;
+				border: none;
+				transition: all 0.2s;
+			}
+			.button:hover {
+				background-color: rgba(26, 117, 190, 0.8);
+			}
+			form input {
+				/* margin-top: 20px; */
+				width: 100%;
+				padding: 20px 20px;
+				margin-top: 10px;
+				color: rgb(42, 42, 42);
+				font-size: 1em;
+				font-weight: bold;
+				text-align: center;
+				border-radius: 0.2em;
+			}
+			form input:focus {
+				outline: none;
+			}
+			span {
+				font-size: 1.2em;
+			}
+			#error {
+				margin-top: 10px;
+				color: red;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>JavaScript and Forms</h1>
+		<form name="form1" action="">
+			<span>Temperature in Fahrenheit:</span>
+
+			<input type="text" name="fahrenheit" id="df" size="10" value="0" /><br />
+
+			<input
+				class="button"
+				value="Convert"
+				type="button"
+				name="Convert"
+				onclick="document.form1.celsius.value = processInput(document.form1.fahrenheit.value)"
+			/>
+
+			<span>Temperature in Celsius:</span>
+
+			<input type="text" name="celsius" onfocus="blur();" /><br />
+
+			<div id="error"></div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width : 800px;
+    width: 60%;
+    margin: 0 auto;
+    border: 5px solid #ccc;
+    overflow: auto;
+}
+.top{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.bot{
+    width: calc(100%/3);
+    float: left;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: opacity .4s;
+}
+.bot:hover{
+    opacity: 0.4;
+}

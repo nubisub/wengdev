@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				background-color: #082032;
+				margin: 0%;
+				font-family: "Source Sans Pro", sans-serif;
+				color: antiquewhite;
+			}
+			.navbar {
+				position: fixed;
+				margin: 0%;
+				top: 0%;
+				left: 0%;
+				right: 0%;
+				/* border: solid red; */
+				background-color: #2c394b;
+				display: flex;
+				justify-content: space-between;
+				box-shadow: -1px 11px 59px -2px rgba(0, 0, 0, 0.6);
+				-webkit-box-shadow: -1px 11px 59px -2px rgba(0, 0, 0, 0.6);
+				-moz-box-shadow: -1px 11px 59px -2px rgba(0, 0, 0, 0.6);
+				/* display: block; */
+			}
+			.navbar a {
+				margin: 0%;
+				text-decoration: none;
+				color: antiquewhite;
+				display: inline-block;
+				padding: 20px 30px;
+				/* border: solid black 1px; */
+			}
+			.navbar a:hover {
+				background-color: #ff4c29;
+				color: white;
+			}
+			.kanan {
+				float: right;
+			}
+			.kiri {
+				float: left;
+			}
+			.divkanan {
+				justify-content: flex-end;
+				/* margin-right: 10px; */
+			}
+			body > h1 {
+				text-align: center;
+				font-size: 50px;
+				margin-top: 90px;
+			}
+			main {
+				/* border: solid; */
+				/* margin-top: 25px; */
+				box-sizing: border-box;
+			}
+			section {
+				width: 75%;
+				/* border: solid; */
+			}
+			article {
+				/* border: solid; */
+				width: 75%;
+			}
+			aside {
+				/* border: solid; */
+				width: 25%;
+			}
+			.column {
+				box-sizing: border-box;
+				/* border: solid; */
+				float: right;
+				padding: 15px;
+			}
+			p {
+				font-size: 20px;
+				text-align: justify;
+			}
+			.home {
+				margin: 0%;
+				height: 100vh;
+				/* box-sizing: border-box; */
+				background: rgb(8, 32, 50);
+				background: linear-gradient(
+					185deg,
+					rgba(8, 32, 50, 1) 23%,
+					rgba(44, 57, 75, 1) 54%
+				);
+				/* border: solid; */
+				/* border: solid; */
+			}
+			.hola {
+				padding-top: 30vh;
+				margin-left: auto;
+				margin-right: auto;
+				box-sizing: border-box;
+				/* border: solid; */
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				flex-direction: column;
+				/* justify-content:  */
+				/* margin; */
+			}
+			.hola h1 {
+				font-size: 60px;
+				/* text-align: justify; */
+			}
+			.searchBar {
+				width: 500px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 20px;
+			}
+			#searchQueryInput {
+				width: 100%;
+				height: 2.8rem;
+				background: #f5f5f5;
+				outline: none;
+				border: none;
+				border-radius: 1.625rem;
+				padding: 0 3.5rem 0 1.5rem;
+				font-size: 1rem;
+			}
+
+			#searchQuerySubmit {
+				width: 3.5rem;
+				height: 2.8rem;
+				margin-left: -3.5rem;
+				background: none;
+				border: none;
+				outline: none;
+			}
+			#searchQuerySubmit:hover {
+				cursor: pointer;
+			}
+			.bawah {
+				/* margin-top: 20px; */
+				border-radius: 0.8rem;
+				padding: 10px 30px;
+			}
+            main h1{
+                text-align: center;
+                font-size: 40px;
+            }
+		</style>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div>
+				<a class="kiri" href="#">LOGO</a>
+				<a class="kiri" href="#">Tutorials</a>
+				<a class="kiri" href="#">References</a>
+				<a class="kiri" href="#">Exercises</a>
+				<a class="kiri" href="#">Videos</a>
+			</div>
+
+			<div class="divkanan">
+				<a class="kanan" href="#">Paid Courses</a>
+				<a class="kanan" id="login" href="#">About Us</a>
+			</div>
+		</nav>
+
+		<div class="home">
+			<div class="hola">
+				<h1>What Can I Do For You?</h1>
+				<label for="search"></label>
+				<div class="searchBar">
+					<input
+						id="searchQueryInput"
+						type="text"
+						name="searchQueryInput"
+						placeholder="Search"
+						value=""
+					/>
+					<button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+						<svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+							<path
+								fill="#666666"
+								d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#082032" fill-opacity="1" d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,160C840,160,960,192,1080,197.3C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+		</div>
+<div>
+    
+</div>
+		<main>
+		<h1 style="font-size: 60px;">Main Section</h1>
+			<aside class="column">
+				<h1>Lorem ipsum dolor sit.</h1>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+					velit nesciunt tenetur laborum veritatis, odit dignissimos vel veniam
+					ratione qui! Dolorum minima assumenda minus sequi. Voluptate velit
+					assumenda nam ducimus excepturi, provident praesentium libero corrupti
+					consequatur illo voluptatem unde neque fuga amet? Quibusdam voluptates
+					totam vero doloremque eligendi sit dolore.
+				</p>
+			</aside>
+			<section class="column">
+				<h1>Lorem ipsum dolor sit.</h1>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+					velit nesciunt tenetur laborum veritatis, odit dignissimos vel veniam
+					ratione qui! Dolorum minima assumenda minus sequi. Voluptate velit
+					assumenda nam ducimus excepturi, provident praesentium libero corrupti
+					consequatur illo voluptatem unde neque fuga amet? Quibusdam voluptates
+					totam vero doloremque eligendi sit dolore. Lorem ipsum dolor sit amet
+					consectetur adipisicing elit. Nisi a quos veniam asperiores autem
+					laudantium perspiciatis sequi? Alias quas, soluta eos voluptatem iusto
+					dolor! Aperiam quam amet reprehenderit quos rem. Lorem ipsum dolor,
+					sit amet consectetur adipisicing elit. Laudantium et cum perferendis
+					animi, quia illo necessitatibus itaque voluptatum qui culpa corrupti,
+					tempore sed odit consequatur temporibus, repudiandae dicta distinctio
+					voluptatibus.
+				</p>
+			</section>
+
+			<article class="column">
+				<h1>Lorem ipsum dolor sit.</h1>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+					velit nesciunt tenetur laborum veritatis, odit dignissimos vel veniam
+					ratione qui! Dolorum minima assumenda minus sequi. Voluptate velit
+					assumenda nam ducimus excepturi, provident praesentium libero corrupti
+					consequatur illo voluptatem unde neque fuga amet? Quibusdam voluptates
+					totam vero doloremque eligendi sit dolore.
+				</p>
+			</article>
+		</main>
+		<hr />
+		<footer>
+			<p style="text-align: center">&copy; Copyright 2022</p>
+		</footer>
+	</body>
+</html>

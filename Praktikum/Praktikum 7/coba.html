@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="indexcss.css" />
+    <link rel="icon" href="img/chebyicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA CHEBY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/73dfd73928.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        body {
+  font-family: "Lato", sans-serif;
+  margin: auto;
+  /* height: 2000px; */
+}
+
+.logocheby img {
+  width: 100px;
+  height: auto;
+  padding-top: 5px;
+  /* border-radius: 10%; */
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0px;
+  overflow: hidden;
+  /* padding: 20px; */
+  text-align: center;
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logocheby {
+  padding-left: 3rem;
+}
+.navmenu {
+  padding-right: 3rem;
+}
+
+.navmenu a:hover {
+  /* background-color: white; */
+  border-radius: 1rem;
+  color: #ffa900;
+}
+
+.peraturan {
+  text-align: justify;
+}
+
+.tombolemail {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  min-height: 50vh;
+  /* align-items: center; */
+  /* display: flex; */
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 5px;
+  /* display: flex; */
+}
+
+.section {
+  min-height: 50vh;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+}
+/* .div1,.div1,.div1,.div1{
+    border-radius: 20%;
+    border:  2px solid #f44336;
+  } */
+.gambar-gallery {
+  /* border-radius: 20%;
+     */
+  width: 100%;
+  /* max-width; */
+}
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div7 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div8 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.div9 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.div10 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.div11 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.div12 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+.div13 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.div14 {
+  grid-area: 5 / 2 / 6 / 3;
+}
+.div15 {
+  grid-area: 5 / 3 / 6 / 4;
+}
+.div16 {
+  grid-area: 6 / 1 / 7 / 2;
+}
+.div17 {
+  grid-area: 6 / 2 / 7 / 3;
+}
+.div18 {
+  grid-area: 6 / 3 / 7 / 4;
+}
+
+.caption-gallery {
+  /* background-color: #2d2d2d; */
+  text-align: center;
+  color: white;
+  background-color: #2d2d2d;
+  font-size: 1.2em;
+  /* padding-bottom: auto; */
+  /* margin-bottom: 1em; */
+}
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9,
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15,
+.div16,
+.div17,
+.div18 {
+  background-color: #ffa900;
+  border-radius: 2%;
+}
+
+footer {
+  display: flex;
+  gap: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  /* display: flex; */
+  margin-bottom: 0px;
+}
+footer > div {
+  /* flex: 1;
+  text-align: center;
+  padding: 10px; */
+  width: 33%;
+  /* align-self: center; */
+}
+
+.poinfooter {
+  text-align: center;
+}
+
+.mediasosial a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.mediasosial i {
+  width: 1.5rem;
+}
+
+.alamat i {
+  width: 1.5rem;
+}
+
+/* register */
+/* register */
+/* register */
+/* register */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  /* height: 100px; */
+  border: 1px solid black;
+}
+
+.atasregister {
+  padding-top: 90px;
+}
+
+.container h1 {
+  text-align: center;
+  /* font-size: 40px;
+    font-weight: bold; */
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #ffa900;
+  /* #ffa900 */
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* login css */
+/* login css */
+/* login css */
+/* login css */
+/* login css */
+/* login css */
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #ffa900;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 1;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 10%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.ataslogin {
+  padding-top: 90px;
+}
+
+/* peminjaman
+peminjaman
+peminjaman
+peminjaman
+peminjaman */
+.formatas {
+  padding-top: 90px;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logocheby">
+          <a href="https://www.gpacheby.org/">
+            <img src="img/logocheby.jpeg" alt="logo" />
+          </a>
+        </div>
+        <div class="navmenu">
+          <a href="index.html">Beranda</a>
+          <a href="register.html">Register</a>
+          <a href="login.html">Login</a>
+          <a href="peminjaman.html">Peminjaman</a>
+          <a href="Pengembalian.html">Pengembalian</a>
+        </div>
+      </nav>
+    </header>
+    <div class="hero">
+      <div class="peraturan container">
+        <h1>Prosedur Peminjaman Perlengkapan Cheby</h1>
+        <ol>
+          <li>
+            Mengetahui, memahami serta mematuhi peraturan peminjaman dan
+            pengembalian perlengkapan GPA Cheby
+          </li>
+          <li>
+            Peminjaman oleh
+            <ol type="a">
+              <li>
+                Organisasi atau UKM, dengan menyerahkan surat peminjaman dari
+                Organisasi/UKM kepada Koordinator Perkap GPA Cheby/ yang
+                ditugaskan dengan menjelaskan tujuan dan maksud peminjaman alat
+                tersebut
+              </li>
+              <li>
+                Perseorangan atau umum, bisa dengan menghubungi Koordinator
+                Perkap GPA Cheby/ yang ditugaskan dan menjelaskan tujuan dan
+                maksud dari peminjaman alat tersebut
+              </li>
+            </ol>
+          </li>
+          <li>
+            Pengisian surat perjanjian dan peminjaman serta pengisian list
+            perlengkapan yang dipinjamkan dan ditandatangani oleh anggota GPA
+            Cheby yang ditugaskan, dan mengisi google form yang sudah disediakan
+            sesuai dengan isi dari surat peminjaman.
+          </li>
+          <li>
+            Pengambilan, pengembalian dan pengecekan perlengkapan dengan membawa
+            surat peminjaman yang telah ditandatangani oleh anggota GPA Cheby
+            yang ditugaskan.
+          </li>
+          <li>
+            Semua ketentuan prosedur akan diproses sesuai dengan peraturan yang
+            berlaku dan dengan kebijakan ketua GPA Cheby.
+          </li>
+        </ol>
+      </div>
+      <!-- <div class="hero-text">
+        <h1>GPA CHEBY</h1>
+        <hr />
+        <p>
+          Organisasi kepencinta alam yang berada dalam naungan Senat Mahasiswa
+          Politeknik Statistika STIS
+        </p>
+      </div> -->
+    </div>
+    <!-- <div class="section">
+      <h2 class="section-title">Artikel</h2>
+    </div>
+    <div class="section">
+      <h2 class="section-title">Divisi Peminatan</h2>
+    </div>
+    <div class="section">
+      <h2 class="section-title">Pengurus Harian</h2>
+    </div> -->
+    <div class="gallery container">
+      <h1>Galeri Peralatan Cheby</h1>
+      <div class="gallery-grid">
+        <div class="div1">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/tenda-greatoudoor-merah-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+          <div class="caption-gallery">
+            <p>ini adalah tas eiger</p>
+          </div>
+        </div>
+        <div class="div2">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/tenda-consina-merah.png-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+          <div class="caption-gallery">
+            <p>ini adalah tas eiger</p>
+          </div>
+        </div>
+        <div class="div3">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/tenda-lafuma-kuning-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+          <div class="caption-gallery">
+            <p>ini adalah tas eiger</p>
+          </div>
+        </div>
+        <div class="div4">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/kompor-winn-1a-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+          <div class="caption-gallery">
+            <p>i love you sayang</p>
+          </div>
+        </div>
+        <div class="div5">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/kompor-winn-1b-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div6">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/kompor-rinnai-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div7">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/kompor_portable_kupu_kupu-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div8">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/kompor-parafin-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div9">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/kompor-bunga-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div10">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/nesting-tni-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div11">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/gas.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div12">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/nesting-bulat-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div13">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/flysheet-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div14">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/eiger-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div15">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/sepatu-cotrek-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div16">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/pelampung-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div17">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/Oxycan-500ml-2-1080x1080-removebg-preview.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+        <div class="div18">
+          <img
+            class="gambar-gallery"
+            src="img/gallery/papan-1.png"
+            alt="Girl in a jacket"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <footer>
+      <div class="artikelterkini">
+        <h2 class="poinfooter">Artikel Terkini</h2>
+        <ul>
+          <li>World Forest Day</li>
+          <li>Hari Peduli Sampah Nasional</li>
+          <li>Pentingnya Pertolongan Pertama</li>
+          <li>Selamat Hari Tanah Sedunia 2020!</li>
+          <li>Pengumuman Peserta Pendakian Umum 2020</li>
+        </ul>
+      </div>
+      <div class="alamat">
+        <h2 class="poinfooter">Alamat</h2>
+        <p>
+          <i class="fa-solid fa-house"></i>
+          Jalan Otto Iskandardinata No. 64C, Jakarta Timur, Daerah Khusus
+          Ibukota Jakarta 13330
+        </p>
+        <p><i class="fa-solid fa-phone"></i> 0896 5524 3404</p>
+        <p>
+          <a class="tombolemail" href="mailto:ukmcheby@stis.ac.id">
+            <i class="fa-solid fa-envelope"></i> ukmcheby@stis.ac.id
+          </a>
+        </p>
+      </div>
+      <div class="mediasosial">
+        <h2 class="poinfooter">Media Sosial</h2>
+        <div>
+          <a href="https://www.instagram.com/gpacheby_stis/">
+            <i class="fab fa-instagram"></i> gpacheby_stis
+          </a>
+        </div>
+        <div>
+          <a href="https://twitter.com/gpacheby_stis">
+            <i class="fa-brands fa-twitter"></i> gpacheby_stis
+          </a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/GpaCheby/">
+            <i class="fa-brands fa-facebook-f"></i> GpaCheby
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
