@@ -74,8 +74,14 @@
 <tr>
 <td>Javascript DOM</td>
 <td> <a href="Praktikum/Praktikum%207">Praktikum 7</a> </td>
-<td></td>
+<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%207/jsForms.html">Temperature</a></td>
 <td> <a href="https://nubisub.github.io/wengdev/Exercise/photo.html">Gallery Photo</a></td>
+</tr>
+  <tr>
+<td></td>
+<td></td>
+<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%207/jsRandom.html">Random Sum</a></td>
+<td></td>
 </tr>
 <tr>
 <td>PHP</td>
