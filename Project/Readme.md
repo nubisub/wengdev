@@ -33,6 +33,7 @@ Website ini merupakan website untuk menyimpan dan membagikan resep makanan atau 
 - [x] Pricing
 - [x] Login & Signup Page
 - [x] Dark Mode
+- [x] Open Graph Protocol
 
 ## Menu tersedia (Deadline Final)
 - [x] Sign in
@@ -42,9 +43,8 @@ Website ini merupakan website untuk menyimpan dan membagikan resep makanan atau 
 - [x] Read (all or just user's recipe)
 - [X] Update Recipe
 - [x] Delete Recipe
-- [X] Search Recipe with suggestion
+- [X] Search Recipe with suggestion, with debounce
 - [X] Visibility Recipe (Public or Private)
-
 
 ## Inspirasi Style & UI/UX
 
