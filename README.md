@@ -1,6 +1,13 @@
 # Wengdev
-## [Material](https://cgi.csc.liv.ac.uk/~ullrich/COMP519/notes/)
+[![wakatime](https://wakatime.com/badge/user/ab053e7a-29dd-45e7-8ba6-5eaad830906f/project/64bb71e2-5649-4e63-ada4-8ef43f2d90c4.svg)](https://wakatime.com/badge/user/ab053e7a-29dd-45e7-8ba6-5eaad830906f/project/64bb71e2-5649-4e63-ada4-8ef43f2d90c4)
 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+	![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+  	![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+    ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+    ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+    
+ ## [Material](https://cgi.csc.liv.ac.uk/~ullrich/COMP519/notes/)
 
 <table width="100%">
 <thead>
