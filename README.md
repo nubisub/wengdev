@@ -1,26 +1,98 @@
 # Wengdev
 ## [Material](https://cgi.csc.liv.ac.uk/~ullrich/COMP519/notes/)
-<style>
-    table {
-        width: 80%;
-    }
-</style>
-| Materi |  Source Code  |  Page |
-| ----- | ------------- | ------------- |
-| Internet | [Praktikum 1](Praktikum/Praktikum%201)  |[Page ]()  |
-| HTML | [Praktikum 2](Praktikum/Praktikum%202)  | [Page 1](https://nubisub.github.io/wengdev/Praktikum/Praktikum%202/page01.html)|
-|||[Page 2](https://nubisub.github.io/wengdev/Praktikum/Praktikum%202/page02A.html)|
-| HTML | [Praktikum 3](Praktikum/Praktikum%203)  | [Page 1](https://nubisub.github.io/wengdev/Praktikum/Praktikum%203/page02C.html)  |
-|||[Page 2](https://nubisub.github.io/wengdev/Praktikum%203/page03A.html)|
-|||[Page 3](https://nubisub.github.io/wengdev/Praktikum/Praktikum%203/page03B.html)|
-| CSS | [Praktikum 4](Praktikum/Praktikum%204)  | [Page 1](https://nubisub.github.io/wengdev/Praktikum/Praktikum%204/page02B.html)  |
-|||[Page 2](https://nubisub.github.io/wengdev/Praktikum/Praktikum%204/page04A.html)|
-| CSS | [Praktikum 5](Praktikum/Praktikum%205) |  - |
-| Javascript | [Praktikum 6](Praktikum/Praktikum%206)  |  - |
-| Javascript | [Praktikum 7](Praktikum/Praktikum%207)  | - |
-| PHP | [Praktikum 8](Praktikum/Praktikum%208)  | -|
-| PHP | [Praktikum 9](Praktikum/Praktikum%209)  | - |
-| AJAX | [Praktikum 10](Praktikum/praktikum10)  |  -|
-| REST API | [Praktikum 11](Praktikum/praktikum11)  |  - |
-| Intro Framework | [Praktikum 12](Praktikum/praktikum12)  |- |
-| Materi | [Praktikum 13](Praktikum/pratkikum13)  |-  |
+
+
+<table width="100%">
+<thead>
+<th>Materi</th>
+<th>Source Code</th>
+<th>Page</th>
+</thead>
+<tbody>
+<tr>
+<td>Internet</td>
+<td><a href="Praktikum/Praktikum%201">Praktikum 1</a></td>
+<td></td>
+</tr>
+<tr>
+<td>HTML</td>
+<td><a href="Praktikum/Praktikum%202">Praktikum 2</a></td>
+<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%202/page01.html">Page 1</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%202/page02A.html">Page 2</a></td>
+</tr>
+<tr>
+<td>CSS</td>
+<td><a href="Praktikum/Praktikum%203">Praktikum 3</a></td>
+<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%203/page02C.html">Page 1</a>  </td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%203/page03A.html">Page 2</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%203/page03B.html">Page 3</a></td>
+</tr>
+<tr>
+<td>CSS</td>
+<td><a href="Praktikum/Praktikum%204">Praktikum 4</a></td>
+<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%204/page02B.html">Page 1</a>  </td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%204/page04A.html">Page 2</a></td>
+</tr>
+<tr>
+<td>Javascript</td>
+<td><a href="Praktikum/Praktikum%205">Praktikum 5</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Javascript</td>
+<td><a href="Praktikum/Praktikum%206">Praktikum 6</a> </td>
+<td></td>
+</tr>
+<tr>
+<td>Javascript DOM</td>
+<td> <a href="Praktikum/Praktikum%207">Praktikum 7</a> </td>
+<td></td>
+</tr>
+<tr>
+<td>PHP</td>
+<td><a href="Praktikum/Praktikum%208">Praktikum 8</a> </td>
+<td></td>
+</tr>
+<tr>
+<td>PHP Form & Database</td>
+<td><a href="Praktikum/Praktikum%209">Praktikum 9</a></td>
+<td></td>
+</tr>
+<tr>
+<td>PHP Session & Cookie</td>
+<td><a href="Praktikum/praktikum10">Praktikum 10</a></td>
+<td></td>
+</tr>
+<tr>
+<td>AJAX</td>
+<td><a href="Praktikum/praktikum11">Praktikum 11</a></td>
+<td></td>
+</tr>
+<tr>
+<td>REST API</td>
+<td><a href="Praktikum/praktikum12">Praktikum 12</a> </td>
+<td></td>
+</tr>
+<tr>
+<td>Intro Framework</td>
+<td> <a href="Praktikum/pratkikum13">Praktikum 13</a> </td>
+<td></td>
+</tr>
+</tbody>
+</table>
