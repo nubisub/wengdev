@@ -27,13 +27,13 @@
 		<tr>
 			<td>HTML</td>
 			<td><a href="Praktikum/Praktikum%202">Praktikum 2</a></td>
-			<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%202/page01.html">Page 1</a></td>
+			<td><a target="_blank" href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%202/page01.html">Page 1</a></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td></td>
 			<td></td>
-			<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%202/page02A.html">Page 2</a></td>
+			<td><a target="_blank" href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%202/page02A.html">Page 2</a></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -52,7 +52,7 @@
 			<td></td>
 			<td></td>
 			<td><a href="https://nubisub.github.io/wengdev/Praktikum/Praktikum%203/page03B.html">Page 3</a></td>
-		<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>CSS</td>
@@ -125,12 +125,15 @@
 			<td> <a href="Praktikum">Praktikum 13</a> </td>
 			<td><a href="https://cobavue.vercel.app/#/">Vue.js</a></td>
 			<td></td>
-		tr>
+		</tr>
 		<tr>
 			<td></td>
 			<td></td>
 			<td><a href="https://praktikumcobaci.herokuapp.com/">CI & Bootstrap</a></td>
 			<td></td>
+		</tr>
+		<tr  >
+			<td align="center" colspan="4"><a target="_blank" href="https://github.com/nubisub/wengdevproject">Final Project</a></td>
 		</tr>
 	</tbody>
 </table>
