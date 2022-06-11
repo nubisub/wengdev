@@ -124,7 +124,7 @@
 <tr>
 <td>Intro Framework</td>
 <td> <a href="Praktikum/pratkikum13">Praktikum 13</a> </td>
-<td></td>
+<td><a href="https://cobavue.vercel.app/#/">Vue.js</a></td>
 <td></td>
 </tr>
 </tbody>
